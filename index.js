@@ -1,16 +1,12 @@
-const mangoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const DATABASE = 'mongodb://MYMONGO:27017/TESTUP';
+const DATABASE = "mongodb://localhost:27017/testup";
 
 mongoose
-    .connect(DATABASE, {
-        useNewUrlParser: true,
-        useCreateIndex: true,
-        useUnifiedTopology: true
-    })
-    .then(() => {
-        console.log('DB Connected');
-    })
-    .catch(() => {
-        console.log('Error in DB Connection');
-    });
+  .connect(DATABASE)
+  .then(() => {
+    console.log('DB Connected');
+  })
+  .catch(() => {
+    console.log('Error in DB Connection');
+  });

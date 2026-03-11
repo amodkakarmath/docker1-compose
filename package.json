@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/amodkakarmath/docker1-compose#readme",
   "dependencies": {
-    "mongoose": "^9.2.4"
+    "mongoose": "^9.3.0"
   },
   "description": ""
 }
